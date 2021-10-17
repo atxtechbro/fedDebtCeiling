@@ -3,7 +3,7 @@ import matplotlib
 import pandas as pd
 import requests
 
-
+#https://fiscaldata.treasury.gov/api-documentation/
 endpoint = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny'
 fields = 'record_date,tot_pub_debt_out_amt'
 filters = 'record_date:gte:2021-08-01'
