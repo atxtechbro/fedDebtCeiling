@@ -16,9 +16,10 @@ In this short script, we take the following steps:
 7) therefore, we have tested the claim and it is TRUE
 
 population=328_239_523
-/
-df.loc['2021-10-14']['netChange']
-= 911.91
+
+population / df.loc['2021-10-14']['netChange'] = result
+
+8) apply string formatting to result and interpolate that into f-string and print it
 
 Sources - >
 
