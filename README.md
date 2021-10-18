@@ -7,12 +7,12 @@ The code is short enough at about 25 lines to serve as it's own documentation, a
 
 In this short script, we take the following steps:
 
-1) Construct a parametized url
+1) construct a parametized url
 2) using the url, making a GET request from the US Treasury 'debt_to_penny' API endpoint
 3) loading the response data into JSON
 4) passing that response to create a pandas DataFrame object
 5) shifting the dataframe back by 1 day to make a calculated column called ['netChange'] which is net daily debt change ie todays debt - yesterdays debt = df['netChange
-6) Calculating the quotient of the numerator (net daily debt change or $299,000,000,000) over the denominator, total USA population(population=328_239_523)
+6) calculating the quotient of the numerator (net daily debt change or $299,000,000,000) over the denominator, total USA population(population=328_239_523)
 7) population / df.loc['2021-10-14']['netChange'] = result
 8) apply string formatting to result and interpolate result into f-string and print it
 
