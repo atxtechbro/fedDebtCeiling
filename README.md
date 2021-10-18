@@ -12,14 +12,11 @@ In this short script, we take the following steps:
 3) loading the response data into JSON
 4) passing that response to create a pandas DataFrame object
 5) shifting the dataframe back by 1 day to make a calculated column called ['netChange'] which is net daily debt change ie todays debt - yesterdays debt = df['netChange
-6) Calculating the quotient of the numerator (net daily debt change or $299,000,000,000) over the denominator, total USA population(328,239,523)
-7) therefore, we have tested the claim and it is TRUE
+6) Calculating the quotient of the numerator (net daily debt change or $299,000,000,000) over the denominator, total USA population(population=328_239_523)
+7) population / df.loc['2021-10-14']['netChange'] = result
+8) apply string formatting to result and interpolate result into f-string and print it
 
-population=328_239_523
-
-population / df.loc['2021-10-14']['netChange'] = result
-
-8) apply string formatting to result and interpolate that into f-string and print it
+##evaluates as TRUE
 
 Sources - >
 
