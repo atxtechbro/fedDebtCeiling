@@ -16,7 +16,7 @@ In this short script, we take the following steps:
 7) population / df.loc['2021-10-14']['netChange'] = result
 8) apply string formatting to result and interpolate result into f-string and print it
 
-##evaluates as TRUE
+## evaluates as TRUE
 
 Sources - >
 
